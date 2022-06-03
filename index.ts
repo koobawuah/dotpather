@@ -3,7 +3,7 @@ type objType  = {
 }
 
 function dotpath (str: string) {
-  var parts = str.toString().split('.')
+  const parts = str.split('.')
   var len = parts.length
 
   return function parse (obj: objType) {
