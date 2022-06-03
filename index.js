@@ -1,5 +1,4 @@
 "use strict";
-module.exports = dotpath;
 function dotpath(str) {
     var parts = str.toString().split('.');
     var len = parts.length;

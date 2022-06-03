@@ -1,10 +1,12 @@
-module.exports = dotpath
+type objType  = {
+    [key: string]: any
+}
 
-function dotpath (str) {
+function dotpath (str: string) {
   var parts = str.toString().split('.')
   var len = parts.length
 
-  return function parse (obj) {
+  return function parse (obj: objType) {
     var testKey
 
     for (var i = 0; i < len; ++i) {
