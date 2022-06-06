@@ -1,10 +1,10 @@
-type objType  = {
+export default function dotpath (str: string) {
+  const parts = str.split('.')
+  const len = parts.length
+
+type objType = {
     [key: string]: any
 }
-
-function dotpath (str: string) {
-  const parts = str.split('.')
-  var len = parts.length
 
   return function parse (obj: objType) {
     var testKey
